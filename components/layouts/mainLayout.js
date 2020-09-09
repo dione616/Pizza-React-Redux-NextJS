@@ -10,8 +10,13 @@ const MainLayout = (props) => (
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
       <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
       />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet"
+      ></link>
+      <link rel="stylesheet" href="/static/css/styles.css" />
     </Head>
     <div className="mainLayout_container">
       <Header />

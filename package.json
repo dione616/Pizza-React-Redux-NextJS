@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "nodemon -w server/server.js server/server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.20.0",
+    "express": "^4.17.1",
+    "formik": "^2.1.5",
     "next": "^9.5.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -20,5 +22,8 @@
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-promise": "^0.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
