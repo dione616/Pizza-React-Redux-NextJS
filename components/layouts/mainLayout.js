@@ -19,7 +19,7 @@ const MainLayout = (props) => (
       <link rel="stylesheet" href="/static/css/styles.css" />
     </Head>
     <div className="mainLayout_container">
-      <Header />
+      <Header {...props}/>
       <div className="main_container">{props.children}</div>
     </div>
   </>

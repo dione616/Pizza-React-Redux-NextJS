@@ -8,5 +8,5 @@ const exampleInitialState = {
 }
 
 export function initializeStore(initialState = exampleInitialState) {
-  return createStore(Reducers, initialState, composeWithDevTools(applyMiddleware()))
+  return createStore(Reducers, initialState, composeWithDevTools(applyMiddleware(promiseMiddleware)))
 }

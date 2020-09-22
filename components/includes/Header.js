@@ -1,7 +1,8 @@
 import React from "react"
 import Link from "next/link"
+import auth0Serv from "../../lib/appAuth"
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header>
       <div className="wrapper">
@@ -45,6 +46,27 @@ const Header = () => {
             </ul>
           </nav>
         </div>
+        {props.userAuth ? (
+          <div className="user_actions">
+            <Link href="/admin">
+              <a>
+                <span>Dashboard</span>
+              </a>
+            </Link>
+            <div className="logout_btn" onClick={() => auth0Serv.logout()}>
+              <span>Logout</span>
+            </div>
+          </div>
+        ) : (
+          <div
+            className="login_btn"
+            onClick={() => {
+              auth0Serv.login()
+            }}
+          >
+            <span>User area</span>
+          </div>
+        )}
       </div>
     </header>
   )
