@@ -12,7 +12,7 @@ class MyApp extends App {
       <Provider store={reduxStore}>
         <div className="app">
           <MainLayout userAuth={userAuth}>
-            <Component {...pageProps} siteData={siteData}  />
+            <Component {...pageProps} siteData={siteData} userAuth={userAuth} />
           </MainLayout>
         </div>
       </Provider>

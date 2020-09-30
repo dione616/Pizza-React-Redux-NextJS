@@ -96,6 +96,13 @@ app
       })
     })
 
+    server.patch("/api/v1/site", (req, res) => {
+      let siteData = req.body
+
+      //TODO:Post siteDate to MongoDB
+      return res.json({ update: "Done" })
+    })
+
     //tell next to handle all pages
     server.get("*", (req, res) => {
       return handle(req, res) //let next handle this req and res

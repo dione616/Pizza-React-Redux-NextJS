@@ -1,2 +1,3 @@
 export const SEND_MESSAGE = "SEND_MESSAGE"
 export const CLEAR_MESSAGE = "CLEAR_MESSAGE"
+export const UPD_SITE = "UPD_SITE"

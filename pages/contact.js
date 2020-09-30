@@ -36,7 +36,7 @@ class Contact extends Component {
     return errors
   }
 
-  componentWillUnmount(){
+  componentWillUnmount() {
     this.props.dispatch(clearMessage())
   }
 

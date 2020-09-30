@@ -53,18 +53,21 @@ const Header = (props) => {
                 <span>Dashboard</span>
               </a>
             </Link>
-            <div className="logout_btn" onClick={() => auth0Serv.logout()}>
+            <br />
+            <div className="btn btn-red" onClick={() => auth0Serv.logout()}>
               <span>Logout</span>
             </div>
           </div>
         ) : (
           <div
-            className="login_btn"
+            className="login_btn btn-green"
             onClick={() => {
               auth0Serv.login()
             }}
           >
-            <span>User area</span>
+            <div>Login: test123@gmail.com</div>
+            <div>Password: Password123</div>
+            <div className="btn btn-green">Login</div>
           </div>
         )}
       </div>

@@ -7,6 +7,7 @@ body {
   -webkit-font-smoothing: antialiased !important;
   font-family: Roboto;
   background-color: #f4f4f4;
+  color: white;
 }
 
 h1,
@@ -44,6 +45,7 @@ header {
   height: 100vh;
   z-index: 9999;
   top: 0;
+  color: black;
 }
 
 .error_label {
@@ -420,7 +422,19 @@ h4 {
   top: 0;
   right: 0;
 }
+.btn {
+  padding: 3px;
+  border: none;
+  cursor: pointer;
+}
+.btn-red {
+  background: rgb(255, 157, 157);
+}
+.btn-green {
+  background: rgb(142, 255, 142);
+}
 
-form {
-  margin-top: 50px;
+.form {
+  width: 500px;
+  margin: 50px auto;
 }
